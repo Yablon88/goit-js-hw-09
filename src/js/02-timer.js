@@ -4,6 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 let endDate = '';
 let leftTime = '';
 let intervalID = '';
+let timeDifference = 0;
 const dateNow = Date.now();
 
 const options = {
