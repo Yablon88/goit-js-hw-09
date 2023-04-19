@@ -12,7 +12,7 @@ function formSubmit(event) {
   let stepNumber = Number(step.value);
   let amountNumber = Number(amount.value);
 
-  for (let i = 1; i < amountNumber; i++) {
+  for (let i = 1; i <= amountNumber; i++) {
     createPromise(i, delayNumber)
       .then(({ position, delay }) => {
         console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
